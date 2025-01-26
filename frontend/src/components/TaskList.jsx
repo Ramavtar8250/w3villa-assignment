@@ -28,7 +28,7 @@ const TaskList = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/tasks", {
+      const res = await fetch("https://w3villa-assignment.onrender.com/api/tasks", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -53,7 +53,7 @@ const TaskList = () => {
     }
 
     try {
-      const res = await fetch(`http://localhost:5000/api/tasks/${id}`, {
+      const res = await fetch(`https://w3villa-assignment.onrender.com/api/tasks/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

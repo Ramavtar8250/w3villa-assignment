@@ -16,7 +16,7 @@ const Login = ({ setToken }) => {
     const loadingToast = toast.loading("Logging in...", { toastId: "login" });
 
     try {
-      const response = await fetch("http://localhost:5000/api/auth/login", {
+      const response = await fetch("https://w3villa-assignment.onrender.com/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

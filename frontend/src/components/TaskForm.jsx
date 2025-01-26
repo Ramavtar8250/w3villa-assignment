@@ -19,8 +19,8 @@ const TaskForm = ({ task, setShowForm, fetchTasks }) => {
     e.preventDefault();
     const method = task ? "PUT" : "POST";
     const url = task
-      ? `http://localhost:5000/api/tasks/${task._id}`
-      : "http://localhost:5000/api/tasks";
+      ? `https://w3villa-assignment.onrender.com/api/tasks/${task._id}`
+      : "https://w3villa-assignment.onrender.com/api/tasks";
 
     try {
       const response = await fetch(url, {
