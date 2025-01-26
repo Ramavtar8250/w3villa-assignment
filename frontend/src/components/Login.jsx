@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify"; // Import Toastify
 import "react-toastify/dist/ReactToastify.css"; // Import Toastify styles
 
@@ -111,12 +111,12 @@ const Login = ({ setToken }) => {
         </form>
         <p className="mt-4 text-sm text-gray-600 dark:text-gray-400 text-center">
           Don't have an account?{" "}
-          <a
+          <Link
             href="/register"
             className="text-blue-500 hover:underline dark:text-blue-400"
           >
             Register
-          </a>
+          </Link>
         </p>
       </div>
     </div>
